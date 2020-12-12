@@ -3,12 +3,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class test2 {
-    Utils object;
+  private static Utils object;
 
      @BeforeClass
-   	public void setUp(){
-		object=new Utils();
-	}
+     public static void setObject() {
+         object = new Utils();
+     }
     
     @Test
     public void testFindMax(){
