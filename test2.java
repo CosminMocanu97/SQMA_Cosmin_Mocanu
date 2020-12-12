@@ -1,16 +1,15 @@
-import clase.Utils;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class test2 {
-    private static Utils object;
+    Utils object;
 
-    @BeforeClass
-    public static void setObject() {
-        object = new Utils();
-    }
-
+     @BeforeClass
+   	public void setUp(){
+		object=new Utils();
+	}
+    
     @Test
     public void testFindMax(){
         assertEquals(4,object.findMax(new int[]{1,3,4,2}));
