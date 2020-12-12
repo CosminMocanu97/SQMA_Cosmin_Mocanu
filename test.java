@@ -3,13 +3,13 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class test {
-     Utils object;
+     private static Utils object;
 
      @BeforeClass
-   	public void setUp(){
-		object=new Utils();
-	}
-
+     public static void setObject() {
+         object = new Utils();
+     }
+	
     @Test
     public void testOrdineaOperatiilor() {
         assertEquals(19,object.ordineaOperatiilor(2,3,5));
