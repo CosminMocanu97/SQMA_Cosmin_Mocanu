@@ -4,12 +4,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class test {
-     private static Utils object;
+     Utils object;
 
      @BeforeClass
-     public static void setObject() {
-         object = new Utils();
-     }
+   	public void setUp(){
+		object=new Utils();
+	}
 
     @Test
     public void testOrdineaOperatiilor() {
